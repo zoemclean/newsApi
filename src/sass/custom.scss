@@ -1,5 +1,53 @@
 // Custom sass ..
-h1 {
-    color: pink;
+.container {
+    width: 1100px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justifyContentCenter {
+    justify-content: center;
+}
+
+.searchBox {
+    float: right;
+    width: 200px;
+    padding-bottom: 30px;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.imgPadding {
+    padding-top: 20px;
+}
+
+.paddingTop {
+    padding-top: 80px;
+}
+
+.paddingBottom {
+    padding-bottom: 30px;
+}
+
+.articleLinks {
+    font-size: 11px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.articleText {
+    font-size: 13px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+.articleTitle {
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
 }
 // custom sass and css

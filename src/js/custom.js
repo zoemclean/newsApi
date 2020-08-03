@@ -1,7 +1,7 @@
 // custom js file
-import Vue from 'vue'
-var vue = require('vue');
+// import Vue from 'vue'
 
+var vue = require('vue');
 var axios = require('axios');
 var newsapi = require('newsapi');
 
