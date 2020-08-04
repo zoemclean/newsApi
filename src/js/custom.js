@@ -14,8 +14,21 @@ var newsapi = require('newsapi');
 	var app = new Vue({
   		el: '#app',
   		data: {
-    		news: false
-  		}
+			aboutPage: 'About Us',
+			homePage: 'Home',
+    		news: false,
+			display: true
+  		},
+		methods: {
+			goAboutPage: function () {
+				console.log('working switch')
+				this.display = false;
+			},
+			goHomePage: function () {
+				console.log('working switch')
+				this.display = true;
+			}
+		}
 	});
 
 

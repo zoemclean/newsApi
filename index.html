@@ -13,6 +13,8 @@
 <body>
 
 	<div id="app">
+		<!-- Home Page -->
+		<div class="home" id="home" v-if="display">
 
 		<div class="flex justifyContentCenter">
 			<img src="assets/logo.png" alt="">
@@ -55,7 +57,7 @@
 		<!-- Footer -->
 		<footer class="page-footer font-small paddingTop">
 			<div class="flex justifyContentCenter paddingBottom">
-				<button type="button" name="button" class="btn btn-outline-dark">About Us</button>
+				<button type="button" name="button" class="btn btn-outline-dark" @click="goAboutPage()">{{aboutPage}}</button>
 			</div>
 		  <!-- Footer Elements -->
 		  	<div class="flex justifyContentCenter">
@@ -93,17 +95,121 @@
 		  	</div>
 		  <!-- Copyright -->
 		</footer>
-		<!-- Footer -->
-
-
-
-
-
-
-
 
 		</div>
+		<!-- Footer -->
 
+		</div>
+		<!-- Home Page ENDS -->
+
+
+		<!-- About Page -->
+		<div class="about" id="about" v-if="display === false">
+
+			<div class="flex justifyContentCenter">
+				<img src="assets/logo.png" alt="">
+			</div>
+
+			<div class="container">
+
+			<div class="row">
+				<div class="col col-12 ">
+					<form class="form-inline d-flex justify-content-center md-form form mt-0 searchBox">
+		  				<i class="fa fa-search fa-2x" aria-hidden="true"></i>
+		  				<input class="form-control form-control ml-3 w-75" type="text" placeholder="Search"
+		    			aria-label="Search">
+					</form>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col col-4">
+					<p class="articleLinks">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quidem modi illo tempora
+					</p>
+					<p class="articleLinks">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quidem modi illo tempora
+					</p>
+				</div>
+
+				<div class="col col-8">
+					<h1 class="centerAlign articleTitle">ABOUT US</h1>
+						<div class="row">
+							<div class="col col-6">
+								<div class="flex justifyContentCenter imgPadding">
+									<img class="imgSize" src="assets/riley.jpg">
+								</div>
+								<p class="articleText">
+									Am a bichon frise crosz maltese crosz jacc russell with thicc fluffer fur.  Sumtimez i like 2 dig in teh rubbish bin 4 fud scrapz an i luv teh smell of ratz an will zoom around like crazy if i evr sniff 1.  I like cheese an i will hear it comin' out of teh fridge from milez away.  Iz mai birthday next week an i will turn 9 an i hope mum an daid spoil me with lotz of cheese.  I don't like big dogz an i will grrrowl at them if they come 2 close 2 me
+								</p>
+							</div>
+
+							<div class="col col-6">
+								<div class="flex justifyContentCenter imgPadding">
+									<img class="imgSize" src="assets/roxy.jpg">
+								</div>
+								<p class="articleText">
+									Am a chihuahua crosz foxy which iz calld a taco chihuahua.  I like 2 snooze az much az i can unlesz i hear someone open fud cuz i will b at their feet until i clean up their mesz.  I haz sockz 2 keep mai beanz warm an a hoodie 2 match.  Mai bes fren iz teh neighbourz catto who i like 2 bork at until she runz away cuz that'z wut friendship iz rrite? do u wanna b mai fren 2?
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col col-12">
+								<p class="articleText">
+									4 thiz projec we had 2 utilise a javascript framework or usr interface library 2 create a single paij application that allowz teh usr 2 browse itemz retrievd from an external api.  Teh app will b a newz app that allowz userz 2 view newz storiez from around teh world.  It will use teh newz api
+								</p>
+							</div>
+						</div>
+
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<footer class="page-footer font-small paddingTop">
+				<div class="flex justifyContentCenter paddingBottom">
+					<button type="button" name="button" class="btn btn-outline-dark" @click="goHomePage()">{{homePage}}</button>
+				</div>
+			  <!-- Footer Elements -->
+			  	<div class="flex justifyContentCenter">
+			    <!-- Grid row-->
+			   		<div class="row">
+			      <!-- Grid column -->
+			    		<div class="col-12">
+			        		<div class="mb-5 flex-center">
+			          			<!-- Facebook -->
+			          			<a class="fb-ic">
+			           				<i class="fa fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+			          			</a>
+			          			<!-- Twitter -->
+			          			<a class="tw-ic">
+			           				<i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+			          			</a>
+			          			<!--Instagram-->
+			          			<a class="ins-ic">
+			            			<i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+			          			</a>
+			          			<!--Youtube-->
+			          			<a class="you-ic">
+			           				<i class="fa fa-youtube-play fa-lg white-text fa-2x"> </i>
+			          			</a>
+			        		</div>
+			      		</div>
+			      <!-- Grid column -->
+			    	</div>
+			    <!-- Grid row-->
+			  	</div>
+			  <!-- Footer Elements -->
+			  <!-- Copyright -->
+			  	<div class="footer-copyright text-center py-3">© 2020 Copyright:
+			    	<a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+			  	</div>
+			  <!-- Copyright -->
+			</footer>
+
+			</div>
+			<!-- Footer -->
+		</div>
+		<!-- About Page ENDS -->
 
 	</div>
 
