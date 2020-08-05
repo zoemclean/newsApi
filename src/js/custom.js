@@ -14,10 +14,13 @@ var newsapi = require('newsapi');
 	var app = new Vue({
   		el: '#app',
   		data: {
+    		news: false,
 			aboutPage: 'About Us',
 			homePage: 'Home',
-    		news: false,
 			display: true
+			titleDisplay: false,
+			contentDisplay: false,
+			imageDisplay: false
   		},
 		methods: {
 			goAboutPage: function () {
@@ -27,6 +30,18 @@ var newsapi = require('newsapi');
 			goHomePage: function () {
 				console.log('working switch')
 				this.display = true;
+			},
+			placeTitleInHtml: function (item) {
+				console.log(item.title)
+				this.titleDisplay = item.title
+			},
+			placeContentInHtml: function (item) {
+				console.log(item.content)
+				this.contentDisplay = item.content
+			},
+			getImageInHtml: function (item) {
+				console.log(item.urlToImage)
+				this.imageDisplay = item.urlToImage
 			}
 		}
 	});
