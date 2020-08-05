@@ -24,11 +24,13 @@
 
 		<div class="row">
 			<div class="col col-12 ">
-				<form class="form-inline d-flex justify-content-center md-form form mt-0 searchBox">
-	  				<i class="fa fa-search fa-2x" aria-hidden="true"></i>
+				<!-- <form class="form-inline d-flex justify-content-center md-form form mt-0 searchBox"> -->
+				<div class="form-inline d-flex justify-content-center md-form form mt-0 searchBox">
 	  				<input class="form-control form-control ml-3 w-75" type="text" placeholder="Search"
-	    			aria-label="Search">
-				</form>
+	    			aria-label="Search" id="searchBar" v-on:keyup.enter="search">
+					<i class="fa fa-search fa-2x" aria-hidden="true" @click="search()" v-on:keyup.13="search"></i>
+				</div>
+				<!-- </form> -->
 			</div>
 		</div>
 
