@@ -17,7 +17,7 @@ var newsapi = require('newsapi');
     		news: false,
 			aboutPage: 'About Us',
 			homePage: 'Home',
-			display: true
+			display: true,
 			titleDisplay: false,
 			contentDisplay: false,
 			imageDisplay: false

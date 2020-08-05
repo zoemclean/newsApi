@@ -130,12 +130,14 @@
 
 			<div class="row">
 				<div class="col col-4">
-					<p class="articleLinks">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quidem modi illo tempora
-					</p>
-					<p class="articleLinks">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quidem modi illo tempora
-					</p>
+					<ul  class="a">
+						<li v-for="item in news.data.articles" class="articleLinks" @click="placeContentInHtml(item), placeTitleInHtml(item), getImageInHtml(item)">
+							<a href="#">
+								{{item.title}}
+							</a>
+						</li>
+
+					</ul>
 				</div>
 
 				<div class="col col-8">
