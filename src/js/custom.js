@@ -57,7 +57,8 @@ var newsapi = require('newsapi');
 					})
 						.then(function (response) {
 							app.newsData = response;
-							app.news = response.data.articles;
+							// app.news = response.data.articles;
+							console.log(response)
 						}); // Request ENDS
 				} // If ENDS
 			} // Search Functuin ENDS
